@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>รายงานระบบ — Online Course</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🎓 ระบบคอร์สเรียนออนไลน์ <span>Online Course Dashboard</span></div>
+    <nav>
+      <a href="/">จัดการข้อมูล</a>
+      <a href="/report" class="active">รายงานสรุป</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="cards" id="summary"></section>
+    <div id="reports"></div>
+  </main>
+
+  <script src="{{ url_for('static', filename='report.js') }}"></script>
+</body>
+</html>
